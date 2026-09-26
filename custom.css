@@ -1,0 +1,120 @@
+:root {
+    --primary-blue: #1a73e8;
+    --dark-blue: #0d47a1;
+    --orange-accent: #ff9100;
+    --text-dark: #333333;
+}
+
+body {
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.promo-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: system-ui, -apple-system, sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    background: #ffffff;
+}
+
+.promo-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    position: relative;
+}
+
+.badge {
+    background: var(--orange-accent);
+    color: #000000;
+    font-weight: 700;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.promo-header h1 {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.subheading {
+    color: var(--orange-accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.promo-body {
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.value-prop {
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2.5rem auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.services-list li {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.checkmark {
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.cta-button:hover {
+    background: var(--dark-blue);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+    .services-list {
+        grid-template-columns: 1fr;
+        padding-left: 10%;
+    }
+    .promo-header h1 {
+        font-size: 1.8rem;
+    }
+}
